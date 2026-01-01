@@ -21,8 +21,19 @@
       padding: 48px 32px 96px;
     }
 
-    /* ---------- ACCESSIBILITY ---------- */
-    .sr-only {
+    /* ---------- HERO ---------- */
+    header.hero {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header.hero img {
+      max-width: 240px;
+      margin-bottom: 12px;
+    }
+
+    /* SEO / Accessibility only */
+    h1.sr-only {
       position: absolute;
       width: 1px;
       height: 1px;
@@ -34,33 +45,20 @@
       border: 0;
     }
 
-    /* ---------- HERO / HEADER ---------- */
-    header.hero {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    header.hero img {
-      max-width: 260px;
-      margin-bottom: 16px;
-    }
-
-    header.hero p.subtitle {
-      font-style: italic;
-      font-size: 18px;
-      color: #374151;
-      margin-top: 0;
-    }
-
     hr.divider {
       border: none;
       border-top: 1px solid #e5e7eb;
-      margin: 60px 0;
+      margin: 56px 0;
     }
 
     /* ---------- CONTENT ---------- */
     section {
       margin-bottom: 64px;
+    }
+
+    section p {
+      font-size: 18px;
+      margin-top: 0;
     }
 
     section h2 {
@@ -69,14 +67,9 @@
       margin-bottom: 12px;
     }
 
-    section p {
-      font-size: 18px;
-      margin-top: 0;
-    }
-
     ul {
       padding-left: 20px;
-      font-size: 17px;
+      font-size: 18px;
     }
 
     ul li {
@@ -108,16 +101,14 @@
 
   <div class="container">
 
-    <!-- ===== INSTITUTIONAL HEADER ===== -->
+    <!-- ===== AUTHORITATIVE IDENTITY ===== -->
     <header class="hero">
-      <img src="assets/logo.svg" alt="AlphaGen Institute for Cognitive & Quantitative Finance Research">
+      <img src="assets/logo.svg" alt="AlphaGen Institute Logo">
 
-      <!-- Semantic authority (hidden visually, required structurally) -->
+      <!-- Semantic only, not visually rendered -->
       <h1 class="sr-only">
-        AlphaGen Institute for Cognitive &amp; Quantitative Finance Research
+        AlphaGen Institute for Cognitive & Quantitative Finance Research
       </h1>
-
-      <p class="subtitle">Independent Research Institute</p>
     </header>
 
     <hr class="divider">
