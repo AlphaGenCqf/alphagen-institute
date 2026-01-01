@@ -9,87 +9,147 @@
     body {
       font-family: Georgia, "Times New Roman", serif;
       background-color: #ffffff;
-      color: #222;
-      margin: 40px;
-      line-height: 1.6;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
     }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 32px;
+    }
+
     header {
-      border-bottom: 1px solid #ccc;
-      margin-bottom: 30px;
-      padding-bottom: 10px;
+      text-align: center;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 32px;
+      margin-bottom: 48px;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 5px;
+
+    header h1 {
+      font-size: 30px;
+      font-weight: normal;
+      margin-bottom: 12px;
     }
-    h2 {
-      font-size: 20px;
-      margin-top: 40px;
+
+    header img {
+      max-width: 220px;
+      margin: 24px 0;
     }
-    p, ul {
-      max-width: 800px;
+
+    header p {
+      font-style: italic;
+      color: #4b5563;
+      margin-top: 8px;
     }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    section h2 {
+      font-size: 22px;
+      font-weight: normal;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
-      margin-top: 60px;
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #d1d5db;
+      text-align: center;
       font-size: 14px;
-      color: #666;
-      border-top: 1px solid #ccc;
-      padding-top: 15px;
+      color: #4b5563;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<header>
-  <h1>AlphaGen Institute for Cognitive & Quantitative Finance Research</h1>
-  <p><em>Independent Research Institute</em></p>
-</header>
+    <header>
+      <h1>AlphaGen Institute for Cognitive & Quantitative Finance Research</h1>
 
-<section>
-  <p>
-    The AlphaGen Institute is an independent research body focused on understanding
-    financial markets through cognitive, quantitative, and regime-based frameworks.
-    Our research emphasizes diagnostic modeling, adaptive market stability, and the
-    structural limits of prediction in non-stationary financial systems.
-  </p>
-</section>
+      <!-- LOGO IMAGE (THIS IS WHERE THE PIC IS MENTIONED) -->
+      <img src="assets/logo.png" alt="AlphaGen Institute Logo">
 
-<section>
-  <h2>Research Focus</h2>
-  <ul>
-    <li>Belief–Reality Divergence and regime diagnostics</li>
-    <li>Adaptive and cognitive market frameworks</li>
-    <li>Volatility, stability, and structural risk analysis</li>
-  </ul>
-</section>
+      <p>Independent Research Institute</p>
+    </header>
 
-<section>
-  <h2>Selected Publications</h2>
-  <ul>
-    <li>Belief–Reality Divergence and Market Regime Stability (SSRN)</li>
-    <li>Evolutionary Market Intelligence Framework for Self-Adaptive Quantitative Systems (SSRN)</li>
-    <li>AlphaGen: An Adaptive Algorithmic Trading Ecosystem (SSRN)</li>
-  </ul>
-</section>
+    <section>
+      <p>
+        The AlphaGen Institute is an independent research body focused on the
+        study of financial markets through cognitive, quantitative, and
+        regime-based frameworks. Our research emphasizes diagnostic modeling,
+        adaptive market stability, and the structural limits of prediction in
+        non-stationary financial systems.
+      </p>
+    </section>
 
-<section>
-  <h2>About</h2>
-  <p>
-    <strong>Saikat Ghosh</strong><br>
-    Researcher in Cognitive & Quantitative Finance
-  </p>
-</section>
+    <section>
+      <h2>Research Focus</h2>
+      <ul>
+        <li>Belief–Reality Divergence and regime diagnostics</li>
+        <li>Adaptive and cognitive market frameworks</li>
+        <li>Volatility, stability, and structural risk analysis</li>
+        <li>Limits of forecasting in evolving financial systems</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: alphagen.cqf.research@gmail.com</p>
+    <section>
+      <h2>Selected Publications</h2>
+      <ul>
+        <li>Belief–Reality Divergence and Market Regime Stability (SSRN)</li>
+        <li>Evolutionary Market Intelligence Framework for Self-Adaptive Quantitative Systems (SSRN)</li>
+        <li>AlphaGen: An Adaptive Algorithmic Trading Ecosystem (SSRN)</li>
+      </ul>
+    </section>
 
-</section>
+    <section>
+      <h2>Affiliation</h2>
+      <p>
+        <strong>Saikat Ghosh</strong><br>
+        Founder & Independent Researcher<br>
+        AlphaGen Institute for Cognitive & Quantitative Finance Research
+      </p>
+    </section>
 
-<footer>
-  © 2026 AlphaGen Institute for Cognitive & Quantitative Finance Research
-</footer>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:alphagen.cqf.research@gmail.com">
+          alphagen.cqf.research@gmail.com
+        </a>
+      </p>
+    </section>
 
+    <footer>
+      © 2026 AlphaGen Institute for Cognitive & Quantitative Finance Research
+    </footer>
+
+  </div>
 </body>
 </html>
+
