@@ -5,6 +5,9 @@
   <title>AlphaGen Institute for Cognitive & Quantitative Finance Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="description"
+        content="AlphaGen Institute is an independent research organization focused on cognitive finance, adaptive quantitative systems, and audit-grade market diagnostics.">
+
   <style>
     body {
       font-family: Georgia, "Times New Roman", serif;
@@ -18,30 +21,43 @@
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 80px 32px 100px;
+      padding: 72px 32px 100px;
     }
 
     /* ---------- HERO ---------- */
     header.hero {
       text-align: center;
-      margin-bottom: 80px;
+      margin-bottom: 72px;
     }
 
     header.hero img {
-      max-width: 260px;
-      margin-bottom: 40px;
+      max-width: 300px;
+      margin-bottom: 28px;
     }
 
-    /* Semantic title for SEO only (not visually repeated) */
+    /* Semantic title (SEO / accessibility only) */
     header.hero h1 {
       position: absolute;
       left: -9999px;
     }
 
+    header.hero .tagline {
+      font-size: 18px;
+      font-style: italic;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+
+    header.hero .summary {
+      font-size: 17px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
     hr.divider {
       border: none;
       border-top: 1px solid #e5e7eb;
-      margin: 60px 0;
+      margin: 64px 0;
     }
 
     /* ---------- CONTENT ---------- */
@@ -55,14 +71,22 @@
       margin-bottom: 12px;
     }
 
+    section h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
     section p {
       font-size: 17px;
       margin-top: 0;
+      max-width: 780px;
     }
 
     ul {
       padding-left: 20px;
       font-size: 17px;
+      max-width: 760px;
     }
 
     ul li {
@@ -71,7 +95,7 @@
 
     /* ---------- FOOTER ---------- */
     footer {
-      margin-top: 80px;
+      margin-top: 96px;
       padding-top: 24px;
       border-top: 1px solid #e5e7eb;
       text-align: center;
@@ -92,67 +116,139 @@
 
 <body>
 
-  <div class="container">
+<main class="container">
 
-    <!-- ===== HERO ===== -->
-    <header class="hero">
-      <img src="assets/logo.svg" alt="AlphaGen Institute Logo">
+  <!-- ================= HERO ================= -->
+  <header class="hero" role="banner">
+    <img src="assets/logo.svg" alt="AlphaGen Institute Logo">
 
-      <!-- SEO / accessibility only -->
-      <h1>AlphaGen Institute for Cognitive &amp; Quantitative Finance Research</h1>
-    </header>
+    <h1>AlphaGen Institute for Cognitive &amp; Quantitative Finance Research</h1>
 
-    <hr class="divider">
+    <p class="tagline"><strong>Adaptive Finance. Audit-Grade Science.</strong></p>
 
-    <!-- ===== ABOUT ===== -->
-    <section>
-      <p>
-        The AlphaGen Institute is an independent research body focused on the study
-        of financial markets through cognitive, quantitative, and regime-based
-        frameworks. Our research emphasizes diagnostic modeling, adaptive market
-        stability, and the structural limits of prediction in non-stationary
-        financial systems.
-      </p>
-    </section>
+    <p class="summary">
+      AlphaGen advances the scientific study of financial markets through
+      cognitive modeling, quantitative diagnostics, and regime-aware research
+      frameworks.
+    </p>
+  </header>
 
-    <!-- ===== RESEARCH FOCUS ===== -->
-    <section>
-      <h2>Research Focus</h2>
-      <ul>
-        <li>Belief–Reality Divergence and regime diagnostics</li>
-        <li>Adaptive and cognitive market frameworks</li>
-        <li>Volatility, stability, and structural risk analysis</li>
-      </ul>
-    </section>
+  <hr class="divider">
 
-    <!-- ===== SELECTED PUBLICATIONS ===== -->
-    <section>
-      <h2>Selected Publications</h2>
-      <ul>
-        <li>Belief–Reality Divergence and Market Regime Stability (SSRN)</li>
-        <li>Evolutionary Market Intelligence Framework for Self-Adaptive Quantitative Systems (SSRN)</li>
-        <li>AlphaGen: An Adaptive Algorithmic Trading Ecosystem (SSRN)</li>
-      </ul>
-    </section>
+  <!-- ================= ABOUT ================= -->
+  <section id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About AlphaGen</h2>
 
-    <!-- ===== CONTACT ===== -->
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:alphagen.cqf.research@gmail.com">
-          alphagen.cqf.research@gmail.com
-        </a>
-      </p>
-    </section>
+    <p>
+      The AlphaGen Institute is an independent research body dedicated to the
+      study of financial markets as adaptive, non-stationary systems. Our work
+      emphasizes diagnostic rigor, structural interpretability, and transparent
+      modeling over performance-driven optimization.
+    </p>
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-      © AlphaGen Institute for Cognitive &amp; Quantitative Finance Research<br>
-      Independent Research Institute
-    </footer>
+    <h3>Institutional Identity</h3>
+    <p>
+      AlphaGen operates independently of commercial execution incentives.
+      Research outputs are designed to be auditable, reproducible, and suitable
+      for peer inspection.
+    </p>
+  </section>
 
-  </div>
+  <!-- ================= RESEARCH FOCUS ================= -->
+  <section id="research" aria-labelledby="research-heading">
+    <h2 id="research-heading">Research Focus</h2>
+
+    <p>
+      AlphaGen’s research treats markets as cognitive systems shaped by belief
+      formation, feedback loops, and regime transitions rather than static
+      statistical processes.
+    </p>
+
+    <ul>
+      <li>Cognitive finance and belief–reality divergence</li>
+      <li>Regime diagnostics and market stability analysis</li>
+      <li>Adaptive quantitative and algorithmic systems</li>
+      <li>Audit-grade modeling and reproducibility standards</li>
+    </ul>
+  </section>
+
+  <!-- ================= FLAGSHIP PROJECTS ================= -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Flagship Projects</h2>
+
+    <h3>Cognitive Womb Framework</h3>
+    <p>
+      A conceptual research construct describing the generative conditions under
+      which adaptive strategies emerge within regime-conditioned market
+      environments.
+    </p>
+
+    <h3>Belief–Reality Divergence (BRD)</h3>
+    <p>
+      A diagnostic framework quantifying persistent divergence between belief-
+      conditioned expectations and realized market structure, with applications
+      to regime instability and stress accumulation.
+    </p>
+
+    <h3>AlphaGen Adaptive Ecosystem</h3>
+    <p>
+      An evolving research environment for developing and auditing adaptive
+      quantitative systems governed by regime diagnostics and structural risk
+      controls.
+    </p>
+  </section>
+
+  <!-- ================= MANIFESTO ================= -->
+  <section id="manifesto" aria-labelledby="manifesto-heading">
+    <h2 id="manifesto-heading">Manifesto &amp; Standards</h2>
+
+    <ul>
+      <li>Transparency over opacity</li>
+      <li>Structure over curve-fitting</li>
+      <li>Diagnostics over blind optimization</li>
+      <li>Reproducibility over performance claims</li>
+    </ul>
+
+    <p>
+      AlphaGen research is designed for reviewer-centric validation, with explicit
+      assumptions, documented failure modes, and reproducible artifacts.
+    </p>
+
+    <p>
+      <a href="manifesto.html">Read the AlphaGen Manifesto</a>
+    </p>
+  </section>
+
+  <!-- ================= PUBLICATIONS ================= -->
+  <section id="publications" aria-labelledby="publications-heading">
+    <h2 id="publications-heading">Publications &amp; Outputs</h2>
+
+    <ul>
+      <li>Belief–Reality Divergence and Market Regime Stability (SSRN)</li>
+      <li>Evolutionary Market Intelligence Framework for Self-Adaptive Systems (SSRN)</li>
+      <li>AlphaGen: An Adaptive Algorithmic Trading Ecosystem (SSRN)</li>
+    </ul>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+
+    <p>
+      Email:
+      <a href="mailto:alphagen.cqf.research@gmail.com">
+        alphagen.cqf.research@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer role="contentinfo">
+    © AlphaGen Institute for Cognitive &amp; Quantitative Finance Research<br>
+    Independent Research Institute
+  </footer>
+
+</main>
 
 </body>
 </html>
