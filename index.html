@@ -18,105 +18,111 @@
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 48px 32px;
+      padding: 80px 32px 100px;
     }
 
-    header {
+    /* ---------- HERO / HEADER ---------- */
+    header.hero {
       text-align: center;
-      margin-bottom: 56px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 32px;
+      margin-bottom: 80px;
     }
 
-    header img {
+    header.hero img {
       max-width: 260px;
-      margin: 0 auto 20px;
-      display: block;
+      margin-bottom: 28px;
     }
 
-    h1 {
-      font-size: 30px;
-      margin: 10px 0 6px;
-      font-weight: normal;
+    header.hero h1 {
+      font-size: 34px;
+      font-weight: 600;
+      margin-bottom: 6px;
     }
 
-    .subtitle {
+    header.hero p.subtitle {
       font-style: italic;
-      color: #555;
-      margin-top: 6px;
+      font-size: 18px;
+      color: #374151;
+      margin-top: 0;
     }
 
+    hr.divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 60px 0;
+    }
+
+    /* ---------- CONTENT ---------- */
     section {
-      margin-bottom: 48px;
+      margin-bottom: 64px;
     }
 
-    h2 {
-      font-size: 22px;
+    section h2 {
+      font-size: 24px;
+      font-weight: 600;
       margin-bottom: 12px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
-      font-weight: normal;
     }
 
-    p {
-      margin-bottom: 16px;
+    section p {
+      font-size: 17px;
+      margin-top: 0;
     }
 
     ul {
       padding-left: 20px;
+      font-size: 17px;
     }
 
-    li {
-      margin-bottom: 8px;
+    ul li {
+      margin-bottom: 10px;
     }
 
+    /* ---------- FOOTER ---------- */
     footer {
-      margin-top: 64px;
+      margin-top: 80px;
       padding-top: 24px;
       border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-      color: #555;
+      text-align: center;
+      font-size: 15px;
+      color: #4b5563;
     }
 
-    a {
-      color: #1f4fd8;
+    footer a {
+      color: #1f77b4;
       text-decoration: none;
     }
 
-    a:hover {
+    footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
 
-    <!-- HEADER -->
-    <header>
-      <img src="assets/logo.svg" alt="AlphaGen Institute Logo" style="max-width:240px;">
+    <!-- ===== SINGLE AUTHORITATIVE HEADER ===== -->
+    <header class="hero">
+      <img src="assets/logo.svg" alt="AlphaGen Institute Logo">
 
-
-      <h1>
-        AlphaGen Institute for Cognitive &amp; Quantitative Finance Research
-      </h1>
-
-      <div class="subtitle">
-        Independent Research Institute
-      </div>
+      <h1>AlphaGen Institute for Cognitive &amp; Quantitative Finance Research</h1>
+      <p class="subtitle">Independent Research Institute</p>
     </header>
 
-    <!-- ABOUT -->
+    <hr class="divider">
+
+    <!-- ===== ABOUT ===== -->
     <section>
       <p>
-        The AlphaGen Institute is an independent research body focused on the study of
-        financial markets through cognitive, quantitative, and regime-based frameworks.
-        Our research emphasizes diagnostic modeling, adaptive market stability, and the
-        structural limits of prediction in non-stationary financial systems.
+        The AlphaGen Institute is an independent research body focused on the study
+        of financial markets through cognitive, quantitative, and regime-based
+        frameworks. Our research emphasizes diagnostic modeling, adaptive market
+        stability, and the structural limits of prediction in non-stationary
+        financial systems.
       </p>
     </section>
 
-    <!-- RESEARCH FOCUS -->
+    <!-- ===== RESEARCH FOCUS ===== -->
     <section>
       <h2>Research Focus</h2>
       <ul>
@@ -126,9 +132,9 @@
       </ul>
     </section>
 
-    <!-- SELECTED WORK -->
+    <!-- ===== SELECTED PUBLICATIONS ===== -->
     <section>
-      <h2>Selected Research Outputs</h2>
+      <h2>Selected Publications</h2>
       <ul>
         <li>Belief–Reality Divergence and Market Regime Stability (SSRN)</li>
         <li>Evolutionary Market Intelligence Framework for Self-Adaptive Quantitative Systems (SSRN)</li>
@@ -136,22 +142,26 @@
       </ul>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ===== CONTACT ===== -->
     <section>
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:alphagen.cqf.research@gmail.com">
+        Email:
+        <a href="mailto:alphagen.cqf.research@gmail.com">
           alphagen.cqf.research@gmail.com
         </a>
       </p>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ===== FOOTER ===== -->
     <footer>
-      © 2026 AlphaGen Institute for Cognitive &amp; Quantitative Finance Research
+      © AlphaGen Institute for Cognitive &amp; Quantitative Finance Research<br>
+      Independent Research Institute
     </footer>
 
   </div>
+
 </body>
 </html>
+
 
