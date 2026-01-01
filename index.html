@@ -21,6 +21,19 @@
       padding: 80px 32px 100px;
     }
 
+    /* ---------- ACCESSIBILITY ---------- */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     /* ---------- HERO / HEADER ---------- */
     header.hero {
       text-align: center;
@@ -29,13 +42,7 @@
 
     header.hero img {
       max-width: 260px;
-      margin-bottom: 28px;
-    }
-
-    header.hero h1 {
-      font-size: 34px;
-      font-weight: 600;
-      margin-bottom: 6px;
+      margin-bottom: 22px;
     }
 
     header.hero p.subtitle {
@@ -101,11 +108,15 @@
 
   <div class="container">
 
-    <!-- ===== SINGLE AUTHORITATIVE HEADER ===== -->
+    <!-- ===== INSTITUTIONAL HEADER ===== -->
     <header class="hero">
-      <img src="assets/logo.svg" alt="AlphaGen Institute Logo">
+      <img src="assets/logo.svg" alt="AlphaGen Institute for Cognitive & Quantitative Finance Research">
 
-      <h1>AlphaGen Institute for Cognitive &amp; Quantitative Finance Research</h1>
+      <!-- Semantic authority (hidden visually, required structurally) -->
+      <h1 class="sr-only">
+        AlphaGen Institute for Cognitive &amp; Quantitative Finance Research
+      </h1>
+
       <p class="subtitle">Independent Research Institute</p>
     </header>
 
@@ -163,5 +174,4 @@
 
 </body>
 </html>
-
 
